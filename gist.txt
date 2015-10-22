@@ -1,0 +1,25 @@
+# Configurar o SSH
+ls -al ~/.ssh
+ssh-keygen -t rsa -b 4096 -C “seu-email@exemplo.com”
+digite seu password
+eval “$(ssh-agent -s)”
+ssh-add ~/.ssh/id_rsa
+pbcopy < ~/.ssh/id_rsa.pub
+ssh - T git@github.com
+
+git config —global user.name “Nome”
+git config —global user.email email@example.com
+
+git init
+git clone <https or ssh>
+git config 
+
+git status
+git add
+git commit -m "message"
+git commit -a
+
+git remote
+git push <remote> <branch>
+
+checkout -b: switch branches
